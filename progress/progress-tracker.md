@@ -1,7 +1,7 @@
 # 📊 Progress Tracker
 
 > Started: **June 2026** · Target: **~6 months** · Pace: **~20 hrs/week**
-> Last updated: **2026-06-26** (Milestone 5 in progress)
+> Last updated: **2026-06-26** — 🎓 **all 6 milestones complete**
 
 ## Milestones
 
@@ -12,8 +12,8 @@
 | 2 | RAG, end to end | ✅ Done | 2026-06-26 | 2026-06-26 | [`rag-knowledge-assistant`](https://github.com/Arunops700/rag-knowledge-assistant) |
 | 3 | Agents, orchestration & MCP | ✅ Done | 2026-06-26 | 2026-06-26 | [`agentic-workbench`](https://github.com/Arunops700/agentic-workbench) |
 | 4 | Evaluation, observability & guardrails | ✅ Done | 2026-06-26 | 2026-06-26 | [`llm-eval-kit`](https://github.com/Arunops700/llm-eval-kit) |
-| 5 | Serving, deployment, MLOps & fine-tuning | 🟡 In progress | 2026-06-26 | — | [`lora-finetune-lab`](https://github.com/Arunops700/lora-finetune-lab) + RAG serving |
-| 6 | Capstone + system design + interview readiness | ⚪ Not started | — | — | `flagship-ai-platform` |
+| 5 | Serving, deployment, MLOps & fine-tuning | ✅ Done | 2026-06-26 | 2026-06-26 | [`lora-finetune-lab`](https://github.com/Arunops700/lora-finetune-lab) + RAG serving |
+| 6 | Capstone + system design + interview readiness | ✅ Done | 2026-06-26 | 2026-06-26 | [`flagship-ai-platform`](https://github.com/Arunops700/flagship-ai-platform) |
 
 **Legend:** ✅ Done · 🟡 In progress · ⚪ Not started
 
@@ -26,6 +26,7 @@
 | `agentic-workbench` | M3 | [link](https://github.com/Arunops700/agentic-workbench) | ReAct agent (from-scratch + LangGraph), tools, per-thread memory, step-budget safety, MCP server + client; 18 tests green; CI + Docker |
 | `llm-eval-kit` | M4 | [link](https://github.com/Arunops700/llm-eval-kit) | Scorers + LLM-as-judge + CI ship-gate, in-memory tracing, prompt-injection/PII guardrails; 25 tests green; CI + Docker |
 | `lora-finetune-lab` | M5 | [link](https://github.com/Arunops700/lora-finetune-lab) | QLoRA Colab notebook + CPU-tested data/prompt/eval + when-to-fine-tune analysis; 15 tests green; CI |
+| `flagship-ai-platform` | M6 | [link](https://github.com/Arunops700/flagship-ai-platform) | **Capstone** — guardrails + ReAct agent + hybrid RAG + tracing + eval gate + served API; 18 tests green; CI |
 
 ## Milestone 1 checklist
 
@@ -70,7 +71,23 @@
 - [x] Cloud deploy path: `render.yaml` blueprint + CI-gated deploy workflow + `docs/deployment.md`
 - [x] `lora-finetune-lab` built: QLoRA Colab notebook + CPU-tested code + when-to-fine-tune analysis; 15 tests
 - [ ] (Optional) Actually deploy to Render and run a Colab QLoRA training end-to-end (needs your accounts)
-- [ ] Milestone 5 reviewed & approved → start Milestone 6 (Capstone + system design + interview readiness)
+- [x] Milestone 5 reviewed & approved → start Milestone 6 (Capstone + system design + interview readiness)
+
+## Milestone 6 checklist 🎓
+
+- [x] Capstone `flagship-ai-platform`: composes guardrails + agent + hybrid RAG + tracing + eval gate + served API; 18 tests green; CI incl. an eval-gate step
+- [x] System-design framework + 2 worked case studies (RAG assistant, multi-agent support)
+- [x] Interview banks: LLM fundamentals, system design, Python/coding+SQL, behavioral; topic banks in each project repo
+- [x] Portfolio polished: 5 project repos + knowledge base, all CI-green, cross-linked
+- [ ] (Optional, ongoing) Mock interviews, company-specific prep, resume tailoring as you target roles
+
+## 🎓 Program complete
+
+All six milestones are done. The portfolio: **5 production-grade project repos** (structured-extractor,
+rag-knowledge-assistant, agentic-workbench, llm-eval-kit, lora-finetune-lab) + the **flagship-ai-platform**
+capstone + this knowledge base — every repo typed, tested, CI-green, and documented to portfolio standard.
+**Next steps are yours:** tailor the resume to target roles, run mock interviews against the banks here,
+and optionally deploy/fine-tune live.
 
 ## Milestone 0 checklist
 
@@ -98,3 +115,5 @@
 | 2026-06-26 | Shipped `llm-eval-kit`: scorers + judge + CI gate, tracer, guardrails (injection+PII verified); 25 tests green, CI passing. M4 ready for review. |
 | 2026-06-26 | M4 approved. Started Milestone 5: serving/deploy/fine-tuning notes. |
 | 2026-06-26 | Shipped `lora-finetune-lab` (QLoRA notebook + tested code + analysis) and a serving upgrade to RAG (cache/rate-limit/metrics/deploy). M5 ready for review. |
+| 2026-06-26 | M5 approved. Started Milestone 6: capstone + interview readiness. |
+| 2026-06-26 | Shipped `flagship-ai-platform` capstone (composes the full stack) + system-design case studies + interview banks. 🎓 All 6 milestones complete. |

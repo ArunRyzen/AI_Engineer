@@ -10,7 +10,7 @@ is the master index; it grows as each milestone ships.
 | `agentic-workbench` | M3 | LangGraph agent + memory + custom MCP server/client | ✅ Shipped | [repo](https://github.com/Arunops700/agentic-workbench) | — |
 | `llm-eval-kit` | M4 | Eval datasets, LLM-as-judge, CI gate, tracing, guardrails | ✅ Shipped | [repo](https://github.com/Arunops700/llm-eval-kit) | — |
 | `lora-finetune-lab` | M5 | QLoRA fine-tuning workflow + when-to-fine-tune analysis | ✅ Shipped | [repo](https://github.com/Arunops700/lora-finetune-lab) | — |
-| `flagship-ai-platform` | M6 | Capstone: production agentic + RAG system, deployed | ⚪ Planned | — | — |
+| `flagship-ai-platform` | M6 | Capstone: composes guardrails + agent + hybrid RAG + tracing + eval gate + served API | ✅ Shipped | [repo](https://github.com/Arunops700/flagship-ai-platform) | — |
 
 **Legend:** ✅ Shipped · 🟡 In progress · ⚪ Planned
 

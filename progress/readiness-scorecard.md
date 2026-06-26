@@ -25,9 +25,12 @@ Self-assessed mastery against the 2026 AI Engineer skill matrix. Updated at each
 | CI/CD for AI systems | 3 | 4 | M5 | Lint/type/test gates + CI-gated deploy workflow |
 | Serving/inference (vLLM concepts) | 2 | 3 | M5 | Conceptual (batching/KV cache); CPU/API serving built |
 | Fine-tuning (LoRA/QLoRA) | 3 | 3 | M5 | QLoRA notebook + tested workflow + when-to-fine-tune |
-| AI system design | 0 | 4 | M6 | |
-| SQL | 2 | 3 | M6 prep | |
-| ML/DL foundations | 1 | 3 | M6 prep | As interview surface needs |
-| Behavioral / storytelling | 2 | 4 | M6 | STAR + project narratives |
+| AI system design | 4 | 4 | M6 | Framework + 2 worked case studies; capstone proves it |
+| SQL | 3 | 3 | M6 prep | Covered in python-coding bank (incl. pgvector) |
+| ML/DL foundations | 2 | 3 | M6 prep | Applied depth; deepen per target role |
+| Behavioral / storytelling | 4 | 4 | M6 | STAR + 5 quantified project narratives |
 
-**Overall readiness:** early — baseline set at Milestone 0. Re-scored each gate.
+**Overall readiness:** 🎓 **interview-ready across the core skill matrix.** Six milestones complete;
+the remaining work is role-specific tailoring — mock interviews, company-specific prep, and resume
+targeting — plus optional live deploy/fine-tune. ML/DL theory is the one area to deepen if a target
+role weights it heavily.

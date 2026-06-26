@@ -4,29 +4,28 @@ Question banks with **full, explained answers** — built up milestone by milest
 Milestone 6 this is a complete, battle-tested prep kit. 2026 AI Engineer interviews are ~60–75%
 generative-AI focused, so the weight here reflects that.
 
-## Banks
+## Banks (here)
 
-| Bank | Primary milestone | Status |
-|------|:-----------------:|:------:|
-| [LLM fundamentals](./llm-fundamentals.md) | M1 | 🟡 Seeded |
-| Prompt engineering | M1 | ⚪ |
-| RAG | M2 | ⚪ |
-| Embeddings & vector DBs | M2 | ⚪ |
-| Agents & ReAct | M3 | ⚪ |
-| LangGraph & orchestration | M3 | ⚪ |
-| MCP | M3 | ⚪ |
-| Evaluation & LLM-as-judge | M4 | ⚪ |
-| Guardrails & security | M4 | ⚪ |
-| Serving, inference & cost | M5 | ⚪ |
-| Fine-tuning | M5 | ⚪ |
-| AI system design | M6 | ⚪ |
-| Python | M6 prep | ⚪ |
-| SQL | M6 prep | ⚪ |
-| ML / DL foundations | M6 prep | ⚪ |
-| FastAPI / Docker / K8s | M6 prep | ⚪ |
-| Behavioral | M6 | ⚪ |
-| Debugging & scenario-based | M6 | ⚪ |
-| Company-specific | M6 | ⚪ |
+| Bank | Status |
+|------|:------:|
+| [LLM fundamentals](./llm-fundamentals.md) | ✅ |
+| [AI system design](./system-design.md) (+ [worked case studies](../system-design/)) | ✅ |
+| [Python & coding](./python-coding.md) (incl. SQL) | ✅ |
+| [Behavioral](./behavioral.md) | ✅ |
+
+## Topic banks (in the project repos)
+
+Each project repo ships a focused `docs/interview-questions.md` — these *are* the deep topic banks,
+grounded in real code:
+
+| Topic | Where |
+|-------|-------|
+| Tool use & structured output | [structured-extractor](https://github.com/Arunops700/structured-extractor/blob/main/docs/interview-questions.md) |
+| RAG, embeddings, vector DBs | [rag-knowledge-assistant](https://github.com/Arunops700/rag-knowledge-assistant/blob/main/docs/interview-questions.md) |
+| Agents, ReAct, LangGraph, MCP | [agentic-workbench](https://github.com/Arunops700/agentic-workbench/blob/main/docs/interview-questions.md) |
+| Evaluation, LLM-as-judge, guardrails | [llm-eval-kit](https://github.com/Arunops700/llm-eval-kit/blob/main/docs/interview-questions.md) |
+| Fine-tuning (LoRA/QLoRA), fine-tune-vs-RAG | [lora-finetune-lab](https://github.com/Arunops700/lora-finetune-lab/blob/main/docs/interview-questions.md) |
+| End-to-end system design | [flagship-ai-platform](https://github.com/Arunops700/flagship-ai-platform/blob/main/docs/interview-questions.md) |
 
 **Legend:** ✅ Complete · 🟡 Seeded · ⚪ Pending.
 

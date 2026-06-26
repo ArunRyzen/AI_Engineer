@@ -38,9 +38,11 @@ in [`roadmap/`](./roadmap/).
 | 3 | [Agents, Orchestration & MCP](./roadmap/milestone-3-agents-mcp.md) | ReAct, LangGraph, Claude Agent SDK, MCP | [`agentic-workbench`](https://github.com/Arunops700/agentic-workbench) | ✅ Done |
 | 4 | [Evaluation, Observability & Guardrails](./roadmap/milestone-4-evals-observability.md) | Evals, LLM-as-judge, tracing, prompt-injection defense | [`llm-eval-kit`](https://github.com/Arunops700/llm-eval-kit) | ✅ Done |
 | 5 | [Serving, Deployment & MLOps](./roadmap/milestone-5-serving-deploy.md) | Docker, CI/CD, caching, cloud deploy, LoRA/QLoRA | [`lora-finetune-lab`](https://github.com/Arunops700/lora-finetune-lab) + RAG serving | 🟡 In progress |
-| 6 | [Capstone + Interview Readiness](./roadmap/milestone-6-capstone-interview.md) | Production agentic+RAG system, system design, mocks | `flagship-ai-platform` | ⚪ Not started |
+| 6 | [Capstone + Interview Readiness](./roadmap/milestone-6-capstone-interview.md) | Production agentic+RAG system, system design, mocks | [`flagship-ai-platform`](https://github.com/Arunops700/flagship-ai-platform) | ✅ Done |
 
 > **Legend:** ✅ Done · 🟡 In progress · ⚪ Not started
+
+> 🎓 **All 6 milestones complete** — 5 production-grade project repos + this knowledge base, all CI-green.
 
 ---
 
@@ -92,6 +94,7 @@ Each significant project is a standalone, professionally documented repository. 
 | [`agentic-workbench`](https://github.com/Arunops700/agentic-workbench) | M3 | ReAct agent (from-scratch + LangGraph) with tools, per-thread memory, step-budget safety, and a working MCP server + client; offline-testable; CLI + FastAPI; CI | ✅ Shipped |
 | [`llm-eval-kit`](https://github.com/Arunops700/llm-eval-kit) | M4 | Eval scorers + LLM-as-judge + CI ship-gate, in-memory tracing, and prompt-injection/PII guardrails; offline-testable; CLI + FastAPI; CI | ✅ Shipped |
 | [`lora-finetune-lab`](https://github.com/Arunops700/lora-finetune-lab) | M5 | QLoRA Colab notebook + CPU-tested data/prompt/eval code + a *when-to-fine-tune-vs-RAG* analysis; CI | ✅ Shipped |
+| [`flagship-ai-platform`](https://github.com/Arunops700/flagship-ai-platform) | M6 | **Capstone** — composes guardrails + ReAct agent + hybrid RAG + tracing + eval ship-gate + served API; offline-testable; CI | ✅ Shipped |
 
 ---
 

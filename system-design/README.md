@@ -19,8 +19,8 @@ seeded earlier as patterns emerge).
 
 | Case study | Status |
 |------------|:------:|
-| Production RAG assistant over 1M documents | ⚪ |
-| Multi-agent customer-support system | ⚪ |
+| [Production RAG assistant over 1M documents](./case-study-rag-assistant.md) | ✅ |
+| [Multi-agent customer-support system](./case-study-multi-agent-support.md) | ✅ |
 | LLM gateway with cost controls & caching | ⚪ |
 | Real-time content moderation pipeline | ⚪ |
 | Document-processing pipeline with human-in-the-loop | ⚪ |
