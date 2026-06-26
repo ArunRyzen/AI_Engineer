@@ -1,7 +1,7 @@
 # 📊 Progress Tracker
 
 > Started: **June 2026** · Target: **~6 months** · Pace: **~20 hrs/week**
-> Last updated: **2026-06-26** (Milestone 3 in progress)
+> Last updated: **2026-06-26** (Milestone 4 in progress)
 
 ## Milestones
 
@@ -10,8 +10,8 @@
 | 0 | Ecosystem setup | ✅ Done | 2026-06-26 | 2026-06-26 | this repo |
 | 1 | LLM fundamentals & prompt engineering | ✅ Done | 2026-06-26 | 2026-06-26 | [`structured-extractor`](https://github.com/Arunops700/structured-extractor) |
 | 2 | RAG, end to end | ✅ Done | 2026-06-26 | 2026-06-26 | [`rag-knowledge-assistant`](https://github.com/Arunops700/rag-knowledge-assistant) |
-| 3 | Agents, orchestration & MCP | 🟡 In progress | 2026-06-26 | — | [`agentic-workbench`](https://github.com/Arunops700/agentic-workbench) |
-| 4 | Evaluation, observability & guardrails | ⚪ Not started | — | — | `llm-eval-kit` |
+| 3 | Agents, orchestration & MCP | ✅ Done | 2026-06-26 | 2026-06-26 | [`agentic-workbench`](https://github.com/Arunops700/agentic-workbench) |
+| 4 | Evaluation, observability & guardrails | 🟡 In progress | 2026-06-26 | — | [`llm-eval-kit`](https://github.com/Arunops700/llm-eval-kit) |
 | 5 | Serving, deployment, MLOps & fine-tuning | ⚪ Not started | — | — | `lora-finetune-lab` + deploys |
 | 6 | Capstone + system design + interview readiness | ⚪ Not started | — | — | `flagship-ai-platform` |
 
@@ -24,6 +24,7 @@
 | `structured-extractor` | M1 | [link](https://github.com/Arunops700/structured-extractor) | Provider-agnostic structured extraction; tool use + schema-constrained output; CLI + FastAPI; 12 tests green; CI + Docker |
 | `rag-knowledge-assistant` | M2 | [link](https://github.com/Arunops700/rag-knowledge-assistant) | Hybrid (dense + BM25/RRF) retrieval, optional rerank, cited answers, recall@k/MRR eval harness; memory or pgvector; 18 tests green; CI + Docker |
 | `agentic-workbench` | M3 | [link](https://github.com/Arunops700/agentic-workbench) | ReAct agent (from-scratch + LangGraph), tools, per-thread memory, step-budget safety, MCP server + client; 18 tests green; CI + Docker |
+| `llm-eval-kit` | M4 | [link](https://github.com/Arunops700/llm-eval-kit) | Scorers + LLM-as-judge + CI ship-gate, in-memory tracing, prompt-injection/PII guardrails; 25 tests green; CI + Docker |
 
 ## Milestone 1 checklist
 
@@ -50,7 +51,16 @@
 - [x] Real MCP server + client (verified stdio round-trip); step-budget safety + AST calculator
 - [x] Offline-testable via scripted policy; 18 tests green; CI + Docker; portfolio docs + interview Q&A
 - [ ] (Optional) Add `ANTHROPIC_API_KEY` to run real Claude tool-use decisions end-to-end
-- [ ] Milestone 3 reviewed & approved → start Milestone 4 (Evals, observability & guardrails)
+- [x] Milestone 3 reviewed & approved → start Milestone 4 (Evals, observability & guardrails)
+
+## Milestone 4 checklist
+
+- [x] Learning notes written (`notes/evals-observability-guardrails.md`)
+- [x] `llm-eval-kit` built: scorers + LLM-as-judge, EvalRunner + CI ship-gate, tracer, guardrails
+- [x] Guardrails verified: prompt-injection blocking + PII redaction (CLI demo); gate fails on regression
+- [x] Offline-testable (FakeJudge); 25 tests green; CI + Docker; portfolio docs + interview Q&A
+- [ ] (Optional) Retrofit the gate/guardrails/tracing into the M1–M3 repos' CI
+- [ ] Milestone 4 reviewed & approved → start Milestone 5 (Serving, deployment, MLOps & fine-tuning)
 
 ## Milestone 0 checklist
 
@@ -74,3 +84,5 @@
 | 2026-06-26 | Shipped `rag-knowledge-assistant`: hybrid retrieval + RRF + rerank + eval harness; 18 tests green, CI passing. M2 ready for review. |
 | 2026-06-26 | M2 approved. Started Milestone 3: agents/MCP notes + `agentic-workbench`. |
 | 2026-06-26 | Shipped `agentic-workbench`: ReAct + LangGraph agent, memory, MCP server+client (stdio verified); 18 tests green, CI passing. M3 ready for review. |
+| 2026-06-26 | M3 approved. Started Milestone 4: evals/observability/guardrails notes + `llm-eval-kit`. |
+| 2026-06-26 | Shipped `llm-eval-kit`: scorers + judge + CI gate, tracer, guardrails (injection+PII verified); 25 tests green, CI passing. M4 ready for review. |

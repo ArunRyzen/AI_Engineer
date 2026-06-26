@@ -16,9 +16,9 @@ Topic-organized learning notes written as each milestone is reached. Notes favor
 | [Agents & ReAct](./agents-mcp.md#react--the-core-loop) | M3 | ✅ |
 | [LangGraph](./agents-mcp.md#orchestration-with-langgraph) | M3 | ✅ |
 | [MCP](./agents-mcp.md#mcp--the-model-context-protocol) | M3 | ✅ |
-| Evaluation & LLM-as-judge | M4 | ⚪ |
-| Observability & tracing | M4 | ⚪ |
-| Guardrails & prompt-injection defense | M4 | ⚪ |
+| [Evaluation & LLM-as-judge](./evals-observability-guardrails.md#evaluation) | M4 | ✅ |
+| [Observability & tracing](./evals-observability-guardrails.md#observability) | M4 | ✅ |
+| [Guardrails & prompt-injection defense](./evals-observability-guardrails.md#guardrails) | M4 | ✅ |
 | Serving & inference | M5 | ⚪ |
 | Deployment & CI/CD | M5 | ⚪ |
 | Fine-tuning (LoRA/QLoRA) | M5 | ⚪ |

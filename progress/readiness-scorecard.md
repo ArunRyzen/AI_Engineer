@@ -17,9 +17,9 @@ Self-assessed mastery against the 2026 AI Engineer skill matrix. Updated at each
 | Agents & ReAct | 3 | 4 | M3 | Built from-scratch + LangGraph; hardest interview section |
 | LangGraph orchestration | 3 | 4 | M3 | StateGraph + checkpointer memory in `agentic-workbench` |
 | MCP (server + client) | 3 | 4 | M3 | FastMCP server + stdio client, verified round-trip |
-| Evaluation & LLM-as-judge | 0 | 4 | M4 | The "ship gate" |
-| Observability / tracing | 0 | 4 | M4 | |
-| Guardrails & prompt-injection defense | 0 | 4 | M4 | "The new XSS" |
+| Evaluation & LLM-as-judge | 3 | 4 | M4 | Scorers + judge + CI ship-gate in `llm-eval-kit` |
+| Observability / tracing | 3 | 4 | M4 | In-memory span tracer (Langfuse/Phoenix shape) |
+| Guardrails & prompt-injection defense | 3 | 4 | M4 | Injection + PII guardrail pipeline; "the new XSS" |
 | Cost & latency optimization | 0 | 4 | M5 | Under-asked, over-used |
 | Docker & deployment | 1 | 4 | M5 | |
 | CI/CD for AI systems | 1 | 4 | M5 | |
