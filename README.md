@@ -100,6 +100,9 @@ Each significant project is a standalone, professionally documented repository. 
 
 ## 🛠️ Working With This Repo
 
+> 📖 **New here? Read the [User Manual](./USER_MANUAL.md)** — how to navigate the knowledge base,
+> clone & run every project, study, and prep for interviews. (No API keys needed to learn or test.)
+
 ```bash
 git clone https://github.com/Arunops700/AI_Engineer.git
 cd AI_Engineer
