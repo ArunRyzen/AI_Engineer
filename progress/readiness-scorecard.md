@@ -8,9 +8,9 @@ Self-assessed mastery against the 2026 AI Engineer skill matrix. Updated at each
 |------------|:---:|:------:|:------------:|-------|
 | Python + async | 3 | 4 | applied throughout | Strong SWE base; polish async + AI idioms |
 | Software engineering rigor (types, tests, CI) | 3 | 4 | M0+ | Applied to AI code |
-| LLM fundamentals (tokens, sampling, context) | 0 | 4 | M1 | |
-| LLM APIs (tool use, structured output) | 0 | 4 | M1 | |
-| Prompt engineering | 1 | 4 | M1, M4 | Versioned, evaluated prompts |
+| LLM fundamentals (tokens, sampling, context) | 2 | 4 | M1 | Notes written; reinforce via more builds |
+| LLM APIs (tool use, structured output) | 3 | 4 | M1 | Applied in `structured-extractor` |
+| Prompt engineering | 2 | 4 | M1, M4 | Prompt-as-contract; evals come in M4 |
 | Embeddings & vector search | 0 | 4 | M2 | |
 | RAG (chunking, hybrid, rerank) | 0 | 4 | M2 | Most-deployed pattern |
 | RAG evaluation | 0 | 4 | M2, M4 | |
