@@ -32,8 +32,8 @@ in [`roadmap/`](./roadmap/).
 
 | # | Milestone | Focus | Major Project | Status |
 |:-:|-----------|-------|---------------|:------:|
-| 0 | [Ecosystem Setup](./roadmap/milestone-0-setup.md) | Master repo + dev tooling | *this repo* | 🟡 In progress |
-| 1 | [LLM Fundamentals & Prompt Engineering](./roadmap/milestone-1-llm-fundamentals.md) | Tokens, sampling, tool use, structured output | `structured-extractor` | ⚪ Not started |
+| 0 | [Ecosystem Setup](./roadmap/milestone-0-setup.md) | Master repo + dev tooling | *this repo* | ✅ Done |
+| 1 | [LLM Fundamentals & Prompt Engineering](./roadmap/milestone-1-llm-fundamentals.md) | Tokens, sampling, tool use, structured output | [`structured-extractor`](https://github.com/Arunops700/structured-extractor) | 🟡 In progress |
 | 2 | [RAG, End to End](./roadmap/milestone-2-rag.md) | Embeddings, chunking, vector DBs, hybrid search, rerank | `rag-knowledge-assistant` | ⚪ Not started |
 | 3 | [Agents, Orchestration & MCP](./roadmap/milestone-3-agents-mcp.md) | ReAct, LangGraph, Claude Agent SDK, MCP | `agentic-workbench` | ⚪ Not started |
 | 4 | [Evaluation, Observability & Guardrails](./roadmap/milestone-4-evals-observability.md) | Evals, LLM-as-judge, tracing, prompt-injection defense | `llm-eval-kit` | ⚪ Not started |
@@ -85,7 +85,9 @@ Chosen for current industry adoption and interview relevance — full *why-this-
 Each significant project is a standalone, professionally documented repository. Master index:
 [`project-index.md`](./project-index.md).
 
-*Projects will be linked here as each milestone completes.*
+| Project | Milestone | What it shows | Status |
+|---------|:---------:|---------------|:------:|
+| [`structured-extractor`](https://github.com/Arunops700/structured-extractor) | M1 | Provider-agnostic structured extraction (Anthropic + OpenAI), tool use, validated output, CLI + FastAPI, tested, Dockerized, CI | ✅ Shipped |
 
 ---
 

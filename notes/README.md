@@ -7,8 +7,8 @@ Topic-organized learning notes written as each milestone is reached. Notes favor
 
 | Topic | Milestone | Status |
 |-------|:---------:|:------:|
-| LLM fundamentals (tokens, attention, sampling) | M1 | ⚪ |
-| LLM APIs & tool use | M1 | ⚪ |
+| [LLM fundamentals (tokens, attention, sampling)](./llm-fundamentals.md) | M1 | ✅ |
+| [LLM APIs & tool use](./llm-apis-tool-use.md) | M1 | ✅ |
 | Prompt engineering | M1, M4 | ⚪ |
 | Embeddings & vector search | M2 | ⚪ |
 | RAG architecture | M2 | ⚪ |

@@ -5,7 +5,7 @@ is the master index; it grows as each milestone ships.
 
 | Project | Milestone | What it demonstrates | Status | Repo | Live demo |
 |---------|:---------:|----------------------|:------:|------|-----------|
-| `structured-extractor` | M1 | LLM tool use, structured/validated output, provider-agnostic, tested | ⚪ Planned | — | — |
+| `structured-extractor` | M1 | LLM tool use, structured/validated output, provider-agnostic, tested | ✅ Shipped | [repo](https://github.com/Arunops700/structured-extractor) | — |
 | `rag-knowledge-assistant` | M2 | Production RAG: hybrid search, rerank, eval harness, FastAPI | ⚪ Planned | — | — |
 | `agentic-workbench` | M3 | LangGraph agent + memory + custom MCP server/client | ⚪ Planned | — | — |
 | `llm-eval-kit` | M4 | Eval datasets, LLM-as-judge, CI gate, tracing, guardrails | ⚪ Planned | — | — |
