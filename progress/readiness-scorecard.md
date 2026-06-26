@@ -14,9 +14,9 @@ Self-assessed mastery against the 2026 AI Engineer skill matrix. Updated at each
 | Embeddings & vector search | 3 | 4 | M2 | pgvector + in-memory; applied in `rag-knowledge-assistant` |
 | RAG (chunking, hybrid, rerank) | 3 | 4 | M2 | Hybrid + RRF + rerank built; most-deployed pattern |
 | RAG evaluation | 3 | 4 | M2, M4 | recall@k/MRR harness built; LLM-judge in M4 |
-| Agents & ReAct | 0 | 4 | M3 | Hardest interview section |
-| LangGraph orchestration | 0 | 4 | M3 | |
-| MCP (server + client) | 0 | 4 | M3 | Emerging standard |
+| Agents & ReAct | 3 | 4 | M3 | Built from-scratch + LangGraph; hardest interview section |
+| LangGraph orchestration | 3 | 4 | M3 | StateGraph + checkpointer memory in `agentic-workbench` |
+| MCP (server + client) | 3 | 4 | M3 | FastMCP server + stdio client, verified round-trip |
 | Evaluation & LLM-as-judge | 0 | 4 | M4 | The "ship gate" |
 | Observability / tracing | 0 | 4 | M4 | |
 | Guardrails & prompt-injection defense | 0 | 4 | M4 | "The new XSS" |

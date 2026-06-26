@@ -13,9 +13,9 @@ Topic-organized learning notes written as each milestone is reached. Notes favor
 | [Embeddings & vector search](./rag.md#embeddings--vector-search) | M2 | ✅ |
 | [RAG architecture](./rag.md) | M2 | ✅ |
 | [RAG evaluation](./rag.md#evaluation--the-ship-gate) | M2, M4 | ✅ |
-| Agents & ReAct | M3 | ⚪ |
-| LangGraph | M3 | ⚪ |
-| MCP | M3 | ⚪ |
+| [Agents & ReAct](./agents-mcp.md#react--the-core-loop) | M3 | ✅ |
+| [LangGraph](./agents-mcp.md#orchestration-with-langgraph) | M3 | ✅ |
+| [MCP](./agents-mcp.md#mcp--the-model-context-protocol) | M3 | ✅ |
 | Evaluation & LLM-as-judge | M4 | ⚪ |
 | Observability & tracing | M4 | ⚪ |
 | Guardrails & prompt-injection defense | M4 | ⚪ |

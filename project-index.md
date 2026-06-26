@@ -7,7 +7,7 @@ is the master index; it grows as each milestone ships.
 |---------|:---------:|----------------------|:------:|------|-----------|
 | `structured-extractor` | M1 | LLM tool use, structured/validated output, provider-agnostic, tested | ✅ Shipped | [repo](https://github.com/Arunops700/structured-extractor) | — |
 | `rag-knowledge-assistant` | M2 | Production RAG: hybrid search, rerank, eval harness, FastAPI | ✅ Shipped | [repo](https://github.com/Arunops700/rag-knowledge-assistant) | — |
-| `agentic-workbench` | M3 | LangGraph agent + memory + custom MCP server/client | ⚪ Planned | — | — |
+| `agentic-workbench` | M3 | LangGraph agent + memory + custom MCP server/client | ✅ Shipped | [repo](https://github.com/Arunops700/agentic-workbench) | — |
 | `llm-eval-kit` | M4 | Eval datasets, LLM-as-judge, CI gate, tracing, guardrails | ⚪ Planned | — | — |
 | `lora-finetune-lab` | M5 | QLoRA fine-tuning workflow + when-to-fine-tune analysis | ⚪ Planned | — | — |
 | `flagship-ai-platform` | M6 | Capstone: production agentic + RAG system, deployed | ⚪ Planned | — | — |

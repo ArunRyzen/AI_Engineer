@@ -1,7 +1,7 @@
 # 📊 Progress Tracker
 
 > Started: **June 2026** · Target: **~6 months** · Pace: **~20 hrs/week**
-> Last updated: **2026-06-26** (Milestone 2 in progress)
+> Last updated: **2026-06-26** (Milestone 3 in progress)
 
 ## Milestones
 
@@ -9,8 +9,8 @@
 |:-:|-----------|:------:|---------|-----------|--------------|
 | 0 | Ecosystem setup | ✅ Done | 2026-06-26 | 2026-06-26 | this repo |
 | 1 | LLM fundamentals & prompt engineering | ✅ Done | 2026-06-26 | 2026-06-26 | [`structured-extractor`](https://github.com/Arunops700/structured-extractor) |
-| 2 | RAG, end to end | 🟡 In progress | 2026-06-26 | — | [`rag-knowledge-assistant`](https://github.com/Arunops700/rag-knowledge-assistant) |
-| 3 | Agents, orchestration & MCP | ⚪ Not started | — | — | `agentic-workbench` |
+| 2 | RAG, end to end | ✅ Done | 2026-06-26 | 2026-06-26 | [`rag-knowledge-assistant`](https://github.com/Arunops700/rag-knowledge-assistant) |
+| 3 | Agents, orchestration & MCP | 🟡 In progress | 2026-06-26 | — | [`agentic-workbench`](https://github.com/Arunops700/agentic-workbench) |
 | 4 | Evaluation, observability & guardrails | ⚪ Not started | — | — | `llm-eval-kit` |
 | 5 | Serving, deployment, MLOps & fine-tuning | ⚪ Not started | — | — | `lora-finetune-lab` + deploys |
 | 6 | Capstone + system design + interview readiness | ⚪ Not started | — | — | `flagship-ai-platform` |
@@ -23,6 +23,7 @@
 |---------|:---------:|------|-----------|
 | `structured-extractor` | M1 | [link](https://github.com/Arunops700/structured-extractor) | Provider-agnostic structured extraction; tool use + schema-constrained output; CLI + FastAPI; 12 tests green; CI + Docker |
 | `rag-knowledge-assistant` | M2 | [link](https://github.com/Arunops700/rag-knowledge-assistant) | Hybrid (dense + BM25/RRF) retrieval, optional rerank, cited answers, recall@k/MRR eval harness; memory or pgvector; 18 tests green; CI + Docker |
+| `agentic-workbench` | M3 | [link](https://github.com/Arunops700/agentic-workbench) | ReAct agent (from-scratch + LangGraph), tools, per-thread memory, step-budget safety, MCP server + client; 18 tests green; CI + Docker |
 
 ## Milestone 1 checklist
 
@@ -40,7 +41,16 @@
 - [x] Runs zero-infra (offline embedder + fake answerer); pgvector backend + docker-compose provided
 - [x] Quality green (ruff/mypy/pytest — 18 tests) + CI + Docker; portfolio docs + interview Q&A
 - [ ] (Optional) Add keys / start pgvector to run semantic embeddings + real answers end-to-end
-- [ ] Milestone 2 reviewed & approved → start Milestone 3 (Agents & MCP)
+- [x] Milestone 2 reviewed & approved → start Milestone 3 (Agents & MCP)
+
+## Milestone 3 checklist
+
+- [x] Learning notes written (`notes/agents-mcp.md`: ReAct, tool calling, LangGraph, memory, MCP)
+- [x] `agentic-workbench` built: from-scratch ReAct + LangGraph agent, shared tool layer, memory
+- [x] Real MCP server + client (verified stdio round-trip); step-budget safety + AST calculator
+- [x] Offline-testable via scripted policy; 18 tests green; CI + Docker; portfolio docs + interview Q&A
+- [ ] (Optional) Add `ANTHROPIC_API_KEY` to run real Claude tool-use decisions end-to-end
+- [ ] Milestone 3 reviewed & approved → start Milestone 4 (Evals, observability & guardrails)
 
 ## Milestone 0 checklist
 
@@ -62,3 +72,5 @@
 | 2026-06-26 | Shipped `structured-extractor` (own repo): provider-agnostic, tested, CI + Docker. M1 ready for review. |
 | 2026-06-26 | M1 approved. Started Milestone 2: RAG notes + `rag-knowledge-assistant`. |
 | 2026-06-26 | Shipped `rag-knowledge-assistant`: hybrid retrieval + RRF + rerank + eval harness; 18 tests green, CI passing. M2 ready for review. |
+| 2026-06-26 | M2 approved. Started Milestone 3: agents/MCP notes + `agentic-workbench`. |
+| 2026-06-26 | Shipped `agentic-workbench`: ReAct + LangGraph agent, memory, MCP server+client (stdio verified); 18 tests green, CI passing. M3 ready for review. |
