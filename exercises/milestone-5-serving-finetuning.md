@@ -103,10 +103,20 @@ facts → RAG. Consistent style/format/skill → fine-tune. Often: both.
 
 ## Optional (live, free) — actually train one 🎓
 
-Open `notebooks/qlora_finetune.ipynb` in **Google Colab** (colab.google), set
-Runtime → T4 GPU (free), and run it top to bottom (~30–60 min). You'll fine-tune a
-small open model with **QLoRA** — training only tiny "adapter" layers so it fits on
-a free GPU.
+Real training, zero cost, in two rounds (the repo's `docs/free-gpu-guide.md` explains
+Colab vs Kaggle, quotas, and how to save your results):
+
+1. **Learn the mechanics:** open `notebooks/qlora_finetune.ipynb` in **Google Colab**
+   (colab.google), set Runtime → T4 GPU (free), run top to bottom (~30–60 min). You'll
+   fine-tune a small 0.5B model with **QLoRA** — training only tiny "adapter" layers so
+   it fits on a free GPU. This is the classic stack interviews ask about.
+2. **Go bigger:** then run `notebooks/unsloth_finetune.ipynb` — same lesson, powered by
+   **Unsloth** (a free library that trains ~2× faster with far less memory), which lets
+   the *same free T4* fine-tune **Llama 3.2 3B**. Prefer **Kaggle** if Colab's daily
+   limit bites — it gives 30 GPU-hours/week.
+
+**Resume line unlocked:** *"Fine-tuned Llama 3.2 3B with QLoRA + Unsloth on a free T4
+and measured base-vs-tuned accuracy on a held-out set."*
 
 > ✅ Done? You can now explain Docker, caching, rate limits, CI gates, and the
 > fine-tune-vs-RAG decision — that's the backbone of the "how would you productionise
