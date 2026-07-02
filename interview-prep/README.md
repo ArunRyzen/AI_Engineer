@@ -20,12 +20,12 @@ grounded in real code:
 
 | Topic | Where |
 |-------|-------|
-| Tool use & structured output | [structured-extractor](https://github.com/Arunops700/structured-extractor/blob/main/docs/interview-questions.md) |
-| RAG, embeddings, vector DBs | [rag-knowledge-assistant](https://github.com/Arunops700/rag-knowledge-assistant/blob/main/docs/interview-questions.md) |
-| Agents, ReAct, LangGraph, MCP | [agentic-workbench](https://github.com/Arunops700/agentic-workbench/blob/main/docs/interview-questions.md) |
-| Evaluation, LLM-as-judge, guardrails | [llm-eval-kit](https://github.com/Arunops700/llm-eval-kit/blob/main/docs/interview-questions.md) |
-| Fine-tuning (LoRA/QLoRA), fine-tune-vs-RAG | [lora-finetune-lab](https://github.com/Arunops700/lora-finetune-lab/blob/main/docs/interview-questions.md) |
-| End-to-end system design | [flagship-ai-platform](https://github.com/Arunops700/flagship-ai-platform/blob/main/docs/interview-questions.md) |
+| Tool use & structured output | [structured-extractor](https://github.com/ArunRyzen/structured-extractor/blob/main/docs/interview-questions.md) |
+| RAG, embeddings, vector DBs | [rag-knowledge-assistant](https://github.com/ArunRyzen/rag-knowledge-assistant/blob/main/docs/interview-questions.md) |
+| Agents, ReAct, LangGraph, MCP | [agentic-workbench](https://github.com/ArunRyzen/agentic-workbench/blob/main/docs/interview-questions.md) |
+| Evaluation, LLM-as-judge, guardrails | [llm-eval-kit](https://github.com/ArunRyzen/llm-eval-kit/blob/main/docs/interview-questions.md) |
+| Fine-tuning (LoRA/QLoRA), fine-tune-vs-RAG | [lora-finetune-lab](https://github.com/ArunRyzen/lora-finetune-lab/blob/main/docs/interview-questions.md) |
+| End-to-end system design | [flagship-ai-platform](https://github.com/ArunRyzen/flagship-ai-platform/blob/main/docs/interview-questions.md) |
 
 **Legend:** ✅ Complete · 🟡 Seeded · ⚪ Pending.
 

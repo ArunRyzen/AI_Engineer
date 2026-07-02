@@ -72,5 +72,5 @@ makes the answer attributable instead of a confident hallucination.
 
 ---
 See also: [[llm-apis-tool-use]] · project: `rag-knowledge-assistant`
-([repo](https://github.com/Arunops700/rag-knowledge-assistant),
-[RAG interview Q&A](https://github.com/Arunops700/rag-knowledge-assistant/blob/main/docs/interview-questions.md)).
+([repo](https://github.com/ArunRyzen/rag-knowledge-assistant),
+[RAG interview Q&A](https://github.com/ArunRyzen/rag-knowledge-assistant/blob/main/docs/interview-questions.md)).

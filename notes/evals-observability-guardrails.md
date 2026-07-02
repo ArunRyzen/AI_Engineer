@@ -63,5 +63,5 @@ cards) and pair with a model detector; never log raw PII.
 
 ---
 See also: [[rag]] · [[agents-mcp]] · project: `llm-eval-kit`
-([repo](https://github.com/Arunops700/llm-eval-kit),
-[interview Q&A](https://github.com/Arunops700/llm-eval-kit/blob/main/docs/interview-questions.md)).
+([repo](https://github.com/ArunRyzen/llm-eval-kit),
+[interview Q&A](https://github.com/ArunRyzen/llm-eval-kit/blob/main/docs/interview-questions.md)).

@@ -33,8 +33,8 @@ milestone has a home and a consistent toolchain.
 
 ## Completion criteria
 
-- [x] Public repo exists at `github.com/Arunops700/AI_Engineer`.
-- [x] Commits attributed to `Arunops700` (contributions count toward the portfolio).
+- [x] Public repo exists at `github.com/ArunRyzen/AI_Engineer`.
+- [x] Commits attributed to `ArunRyzen` (contributions count toward the portfolio).
 - [x] Full folder structure scaffolded and pushed to `main` via a PR.
 - [x] `uv sync`, `uv run ruff check .`, `uv run mypy .`, `uv run pytest` all run clean locally.
 - [x] README dashboard renders with the roadmap and progress tracker.

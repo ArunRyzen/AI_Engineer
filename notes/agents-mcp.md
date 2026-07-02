@@ -70,5 +70,5 @@ Agents are for trajectories you genuinely can't pre-specify.
 
 ---
 See also: [[llm-apis-tool-use]] · [[rag]] · project: `agentic-workbench`
-([repo](https://github.com/Arunops700/agentic-workbench),
-[agent interview Q&A](https://github.com/Arunops700/agentic-workbench/blob/main/docs/interview-questions.md)).
+([repo](https://github.com/ArunRyzen/agentic-workbench),
+[agent interview Q&A](https://github.com/ArunRyzen/agentic-workbench/blob/main/docs/interview-questions.md)).

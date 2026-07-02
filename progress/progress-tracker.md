@@ -8,12 +8,12 @@
 | # | Milestone | Status | Started | Completed | Project repo |
 |:-:|-----------|:------:|---------|-----------|--------------|
 | 0 | Ecosystem setup | ✅ Done | 2026-06-26 | 2026-06-26 | this repo |
-| 1 | LLM fundamentals & prompt engineering | ✅ Done | 2026-06-26 | 2026-06-26 | [`structured-extractor`](https://github.com/Arunops700/structured-extractor) |
-| 2 | RAG, end to end | ✅ Done | 2026-06-26 | 2026-06-26 | [`rag-knowledge-assistant`](https://github.com/Arunops700/rag-knowledge-assistant) |
-| 3 | Agents, orchestration & MCP | ✅ Done | 2026-06-26 | 2026-06-26 | [`agentic-workbench`](https://github.com/Arunops700/agentic-workbench) |
-| 4 | Evaluation, observability & guardrails | ✅ Done | 2026-06-26 | 2026-06-26 | [`llm-eval-kit`](https://github.com/Arunops700/llm-eval-kit) |
-| 5 | Serving, deployment, MLOps & fine-tuning | ✅ Done | 2026-06-26 | 2026-06-26 | [`lora-finetune-lab`](https://github.com/Arunops700/lora-finetune-lab) + RAG serving |
-| 6 | Capstone + system design + interview readiness | ✅ Done | 2026-06-26 | 2026-06-26 | [`flagship-ai-platform`](https://github.com/Arunops700/flagship-ai-platform) |
+| 1 | LLM fundamentals & prompt engineering | ✅ Done | 2026-06-26 | 2026-06-26 | [`structured-extractor`](https://github.com/ArunRyzen/structured-extractor) |
+| 2 | RAG, end to end | ✅ Done | 2026-06-26 | 2026-06-26 | [`rag-knowledge-assistant`](https://github.com/ArunRyzen/rag-knowledge-assistant) |
+| 3 | Agents, orchestration & MCP | ✅ Done | 2026-06-26 | 2026-06-26 | [`agentic-workbench`](https://github.com/ArunRyzen/agentic-workbench) |
+| 4 | Evaluation, observability & guardrails | ✅ Done | 2026-06-26 | 2026-06-26 | [`llm-eval-kit`](https://github.com/ArunRyzen/llm-eval-kit) |
+| 5 | Serving, deployment, MLOps & fine-tuning | ✅ Done | 2026-06-26 | 2026-06-26 | [`lora-finetune-lab`](https://github.com/ArunRyzen/lora-finetune-lab) + RAG serving |
+| 6 | Capstone + system design + interview readiness | ✅ Done | 2026-06-26 | 2026-06-26 | [`flagship-ai-platform`](https://github.com/ArunRyzen/flagship-ai-platform) |
 
 **Legend:** ✅ Done · 🟡 In progress · ⚪ Not started
 
@@ -21,12 +21,12 @@
 
 | Project | Milestone | Repo | Highlights |
 |---------|:---------:|------|-----------|
-| `structured-extractor` | M1 | [link](https://github.com/Arunops700/structured-extractor) | Provider-agnostic structured extraction; tool use + schema-constrained output; CLI + FastAPI; 12 tests green; CI + Docker |
-| `rag-knowledge-assistant` | M2 | [link](https://github.com/Arunops700/rag-knowledge-assistant) | Hybrid (dense + BM25/RRF) retrieval, optional rerank, cited answers, recall@k/MRR eval harness; memory or pgvector; 18 tests green; CI + Docker |
-| `agentic-workbench` | M3 | [link](https://github.com/Arunops700/agentic-workbench) | ReAct agent (from-scratch + LangGraph), tools, per-thread memory, step-budget safety, MCP server + client; 18 tests green; CI + Docker |
-| `llm-eval-kit` | M4 | [link](https://github.com/Arunops700/llm-eval-kit) | Scorers + LLM-as-judge + CI ship-gate, in-memory tracing, prompt-injection/PII guardrails; 25 tests green; CI + Docker |
-| `lora-finetune-lab` | M5 | [link](https://github.com/Arunops700/lora-finetune-lab) | QLoRA Colab notebook + CPU-tested data/prompt/eval + when-to-fine-tune analysis; 15 tests green; CI |
-| `flagship-ai-platform` | M6 | [link](https://github.com/Arunops700/flagship-ai-platform) | **Capstone** — guardrails + ReAct agent + hybrid RAG + tracing + eval gate + served API; 18 tests green; CI |
+| `structured-extractor` | M1 | [link](https://github.com/ArunRyzen/structured-extractor) | Provider-agnostic structured extraction; tool use + schema-constrained output; CLI + FastAPI; 12 tests green; CI + Docker |
+| `rag-knowledge-assistant` | M2 | [link](https://github.com/ArunRyzen/rag-knowledge-assistant) | Hybrid (dense + BM25/RRF) retrieval, optional rerank, cited answers, recall@k/MRR eval harness; memory or pgvector; 18 tests green; CI + Docker |
+| `agentic-workbench` | M3 | [link](https://github.com/ArunRyzen/agentic-workbench) | ReAct agent (from-scratch + LangGraph), tools, per-thread memory, step-budget safety, MCP server + client; 18 tests green; CI + Docker |
+| `llm-eval-kit` | M4 | [link](https://github.com/ArunRyzen/llm-eval-kit) | Scorers + LLM-as-judge + CI ship-gate, in-memory tracing, prompt-injection/PII guardrails; 25 tests green; CI + Docker |
+| `lora-finetune-lab` | M5 | [link](https://github.com/ArunRyzen/lora-finetune-lab) | QLoRA Colab notebook + CPU-tested data/prompt/eval + when-to-fine-tune analysis; 15 tests green; CI |
+| `flagship-ai-platform` | M6 | [link](https://github.com/ArunRyzen/flagship-ai-platform) | **Capstone** — guardrails + ReAct agent + hybrid RAG + tracing + eval gate + served API; 18 tests green; CI |
 
 ## Milestone 1 checklist
 
@@ -92,7 +92,7 @@ and optionally deploy/fine-tune live.
 ## Milestone 0 checklist
 
 - [x] Toolchain verified (git, Python 3.13, gh) and `uv` installed
-- [x] Public `AI_Engineer` repo created under `Arunops700`
+- [x] Public `AI_Engineer` repo created under `ArunRyzen`
 - [x] Git identity set so commits count toward the portfolio
 - [x] Full structure scaffolded and merged to `main` via PR (#1)
 - [x] `uv sync` / `ruff` / `mypy` / `pytest` run clean

@@ -48,5 +48,5 @@ Latency vs. rerank depth; recall vs. context size/cost; freshness vs. re-index c
 vs. a dedicated vector store. There's rarely one right answer — name the trade and your default.
 
 > Reference implementation of these ideas:
-> [rag-knowledge-assistant](https://github.com/Arunops700/rag-knowledge-assistant) and the
-> [flagship-ai-platform](https://github.com/Arunops700/flagship-ai-platform) capstone.
+> [rag-knowledge-assistant](https://github.com/ArunRyzen/rag-knowledge-assistant) and the
+> [flagship-ai-platform](https://github.com/ArunRyzen/flagship-ai-platform) capstone.

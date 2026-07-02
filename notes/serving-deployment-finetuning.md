@@ -76,5 +76,5 @@ beat the base — or that a prompt tweak would match — is a regression in disg
 ---
 See also: [[rag]] · [[evals-observability-guardrails]] · projects:
 `rag-knowledge-assistant` (serving upgrade),
-[`lora-finetune-lab`](https://github.com/Arunops700/lora-finetune-lab)
-([when-to-fine-tune](https://github.com/Arunops700/lora-finetune-lab/blob/main/docs/when-to-finetune.md)).
+[`lora-finetune-lab`](https://github.com/ArunRyzen/lora-finetune-lab)
+([when-to-fine-tune](https://github.com/ArunRyzen/lora-finetune-lab/blob/main/docs/when-to-finetune.md)).

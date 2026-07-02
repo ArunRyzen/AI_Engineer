@@ -50,5 +50,5 @@ Autonomy vs. safety (more gating = fewer auto-resolutions but lower risk); singl
 (coordination cost); how aggressively to escalate. State your default and why.
 
 > Reference implementation of the agent + guardrail patterns:
-> [agentic-workbench](https://github.com/Arunops700/agentic-workbench) and the
-> [flagship-ai-platform](https://github.com/Arunops700/flagship-ai-platform) capstone.
+> [agentic-workbench](https://github.com/ArunRyzen/agentic-workbench) and the
+> [flagship-ai-platform](https://github.com/ArunRyzen/flagship-ai-platform) capstone.
