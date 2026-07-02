@@ -1,226 +1,343 @@
-# 📖 User Manual — Start Here
+# 📖 User Manual — the only guide you need
 
-This is the instruction book for your whole AI-learning setup. It assumes you know
-**only a few basics** — every term is explained in plain words, with examples.
-If you read one document, read this one.
+This manual has **two parts**:
 
----
+- **Part 1 — THE PATH.** A step-by-step checklist from day 1 to job-ready.
+  **Follow it top to bottom and tick the boxes** (edit this file and change `[ ]` to `[x]`).
+  It always tells you the exact next file to open or command to run — you never have to
+  figure out "what's next" yourself.
+- **Part 2 — REFERENCE.** Explanations of terms, commands, and fixes. **Don't read it
+  cover-to-cover** — jump in only when Part 1 or an error message sends you there.
 
-## 1. The big picture — what is all this?
-
-Think of your setup like a **driving school**:
-
-1. **This repo, `AI_Engineer`** = the *classroom*. It has the syllabus (roadmap), the
-   textbook (notes), practice drills (exercises), and mock tests (interview prep).
-   **There is no app code here — only learning material.**
-2. **Six project repos** = the *cars you learn to drive*. Each one is a small, real,
-   working program that teaches you one big AI skill:
-
-   | Learn in this order | Repo | In plain words, it… |
-   |:-:|------|----------------------|
-   | 1 | [structured-extractor](https://github.com/ArunRyzen/structured-extractor) | Takes messy text (like an email or invoice) and pulls out clean, organised data — e.g. *"total: ₹4,200, due: 15 July"* |
-   | 2 | [rag-knowledge-assistant](https://github.com/ArunRyzen/rag-knowledge-assistant) | Answers questions **using your own documents**, with citations — like Ctrl+F that actually understands the question |
-   | 3 | [agentic-workbench](https://github.com/ArunRyzen/agentic-workbench) | An AI **agent** — a model that can *think, pick a tool (like a calculator), use it, and continue* until the job is done |
-   | 4 | [llm-eval-kit](https://github.com/ArunRyzen/llm-eval-kit) | *Grades* AI answers automatically and *blocks* bad ones (prompt attacks, leaked personal data) |
-   | 5 | [lora-finetune-lab](https://github.com/ArunRyzen/lora-finetune-lab) | *Teaches* a small model new behaviour by training it (fine-tuning) — and shows when NOT to bother |
-   | 6 | [flagship-ai-platform](https://github.com/ArunRyzen/flagship-ai-platform) | **The capstone** — combines all of the above into one product, like a full car built from the parts you studied |
-
-**Where things are on your computer:**
-- The classroom: `F:\AI Engineer`
-- The six cars: `F:\structured-extractor`, `F:\rag-knowledge-assistant`, … (each repo is a folder directly on `F:\`)
+> **The 3 rules of the path:**
+> 1. **One step at a time.** Ignore every file and folder not named in your current step.
+> 2. **Stuck for 20+ minutes?** Write the question down, tick the step as "done with doubts",
+>    and keep moving. Most confusion resolves itself 2 steps later.
+> 3. **Reading counts, but doing counts double.** Never skip a drill to read more.
 
 ---
 
-## 2. Words you'll see everywhere (30-second glossary)
+# Part 1 — THE PATH 🛤️
 
-| Word | Plain meaning |
-|------|---------------|
-| **LLM** | "Large Language Model" — the AI that reads and writes text (Gemini, Claude, GPT). |
-| **API** | A way for *your code* to talk to *someone else's program* over the internet. You send a request, you get a response. |
-| **API key** | A secret password that proves the request is yours (and bills your account). **Never share it or commit it to git.** |
-| **Token** | The chunks a model reads text in (~¾ of a word each). You pay per token. |
-| **Prompt** | The text you send the model — your question plus instructions. |
-| **`uv`** | The tool that installs everything a Python project needs, in one command. |
-| **Virtual environment** | A private toolbox per project, so projects don't break each other. `uv` manages this for you. |
-| **Test / `pytest`** | Small scripts that check the code still works. Green = good. |
-| **CI** | Robots on GitHub that re-run the tests on every change. |
-| **Offline / fake mode** | Every project can run **without any API key**, using built-in pretend models. Great (and free) for learning. |
+## Step 0 — Check your tools (once, ~15 min)
 
----
-
-## 3. One-time setup (15 minutes, do once ever)
-
-You need three tools. Check what you already have — open a terminal and run:
+Open a terminal (search "PowerShell" in the Start menu) and run these three lines:
 
 ```bash
 python --version    # want 3.12 or higher
 git --version       # any recent version is fine
-uv --version        # if "not found":  pip install uv
+uv --version        # if "not found": run  pip install uv  and reopen the terminal
 ```
 
-That's the entire setup. Every one of the six projects uses the **same tools the same
-way**, so learning the commands once covers everything.
+- [ ] All three commands print a version number.
+- [ ] Get your (free) Gemini API key and keep it somewhere safe: https://aistudio.google.com/apikey
 
-> **Already done for you:** git is configured to commit as **ArunRyzen**, and all
-> seven repos are already cloned on `F:\`.
+Everything is already cloned and configured on this machine (`F:\AI Engineer` + the six
+project folders on `F:\`, git commits as ArunRyzen). Nothing else to install.
 
 ---
 
-## 4. Running any project — the universal recipe
+## 📍 Milestone 1 — LLM Fundamentals (~1–2 weeks)
 
-Every project works with the **exact same 4 commands**. Example with the first project:
+*What you'll be able to say afterwards: "I know what a token is, what temperature does,
+how tool-calling really works, and how to force an AI to answer in clean JSON."*
 
+**A. Learn**
+- [ ] Read `roadmap\milestone-1-llm-fundamentals.md` — the map (5 min).
+- [ ] Read `notes\llm-fundamentals.md` — split it over 2–3 sittings. Goal: *recognise*
+      the ideas, not memorise them.
+- [ ] Read `notes\llm-apis-tool-use.md` — same approach.
+
+**B. Do** — open `exercises\milestone-1-llm-fundamentals.md`, it has copy-paste code:
+- [ ] Drill 1 — count tokens & estimate cost (~30 min, uses your Gemini key)
+- [ ] Drill 2 — temperature: boring vs creative mode (~30 min)
+- [ ] Drill 3 — tool calling: the model asks, YOU run (~1–2 hrs, the big "aha")
+- [ ] Drill 4 — force clean JSON, then break it on purpose (~1 hr)
+
+**C. See it for real** — in a terminal:
 ```bash
 cd F:\structured-extractor
-
-uv sync --extra dev     # 1) install everything the project needs (one-time per project)
-uv run ruff check .     # 2) lint  = "any sloppy code?"
-uv run mypy .           # 3) types = "any mismatched plumbing?"
-uv run pytest           # 4) tests = "does everything still work?"  ← all pass with NO api key
+uv sync --extra dev      # first time only
+uv run pytest            # all green, no key needed
+uv run extract schemas   # the demo
 ```
+- [ ] Demo ran. Now open `F:\structured-extractor\docs\code-walkthrough.md` and read the
+      code alongside it (2–3 sittings). You'll recognise every idea from your drills.
+- [ ] Change something small in the code, run `uv run pytest` again, watch what breaks,
+      undo it. (This is learning, not vandalism.)
+- [ ] Optional: put your key in `.env` (Part 2, section R4) and run one real extraction.
 
-What the words mean:
-- **`uv sync --extra dev`** — reads the project's shopping list (`pyproject.toml`) and
-  installs the exact packages into the project's private toolbox. Run it once per
-  project (and again after pulling new changes).
-- **`uv run <command>`** — runs a command *inside* that private toolbox.
+**D. Prove it** — answer OUT LOUD, in your own words:
+- [ ] What's a token, and why do we pay per token?
+- [ ] When would you set temperature to 0? When higher?
+- [ ] In tool calling, who actually runs the tool — the model or your code? Why does it matter?
+- [ ] How do you *guarantee* the model's answer fits your schema?
+      (Full answers: `interview-prep\llm-fundamentals.md` and the project's
+      `docs\interview-questions.md`.)
 
-If all four commands succeed, the project is healthy on your machine.
+- [ ] **Tick Milestone 1 in `progress\progress-tracker.md`** → move to Milestone 2. 🎉
 
 ---
 
-## 5. Try each project (no API key needed!)
+## 📍 Milestone 2 — RAG: AI + your own documents (~2–3 weeks)
 
-Each project has a demo that runs entirely offline with built-in fakes.
-`cd` into the project folder first.
+*Afterwards you can say: "I can build a system that answers questions from private
+documents with citations, and MEASURE how good its retrieval is."*
 
+**A. Learn**
+- [ ] Read `roadmap\milestone-2-rag.md` (5 min).
+- [ ] Read `notes\rag.md` (2–3 sittings).
+
+**B. Do** — open `exercises\milestone-2-rag.md` (all drills free & offline):
+- [ ] Drill 1 — watch retrieval happen (citations vs hallucination)
+- [ ] Drill 2 — chunking: change the chunk size, measure the effect
+- [ ] Drill 3 — keyword search vs meaning search vs hybrid
+- [ ] Drill 4 — build your own 10-question golden set
+
+**C. See it for real**
 ```bash
-# 1. structured-extractor — see the data shapes it can extract
-uv run extract schemas
-
-# 2. rag-knowledge-assistant — ask a question over the sample documents
+cd F:\rag-knowledge-assistant
+uv sync --extra dev
+uv run pytest
 uv run rag ask "Which index makes vector search fast?"
-uv run rag eval          # compares 3 search strategies with real numbers
+uv run rag eval
+```
+- [ ] Read `docs\code-walkthrough.md` alongside the code (start with the
+      "exercise knobs" section — it maps every drill to the exact line).
+- [ ] Optional: add your Gemini key to `.env` → real embeddings + real answers.
 
-# 3. agentic-workbench — watch an agent think + use a calculator tool
+**D. Prove it (out loud)**
+- [ ] Why do we cut documents into chunks, and what goes wrong if they're too big/small?
+- [ ] What does "hybrid retrieval" combine, and why is each half needed?
+- [ ] What is recall@k in plain words?
+- [ ] **Tick it in the tracker** → Milestone 3.
+
+---
+
+## 📍 Milestone 3 — Agents & MCP: AI that uses tools (~2–3 weeks)
+
+*Afterwards: "I can build an agent that reasons in a loop, uses tools safely, and I know
+what MCP is for."*
+
+**A. Learn**
+- [ ] Read `roadmap\milestone-3-agents-mcp.md` (5 min).
+- [ ] Read `notes\agents-mcp.md`.
+
+**B. Do** — open `exercises\milestone-3-agents-mcp.md`:
+- [ ] Drill 1 — watch an agent think (find THINK / ACT / OBSERVE in the code)
+- [ ] Drill 2 — break the step budget on purpose
+- [ ] Drill 3 — add your own `today()` tool (the best drill in the course)
+- [ ] Drill 4 — from-scratch loop vs LangGraph: same brain, two skeletons
+- [ ] Drill 5 — MCP demo: tools over a standard plug
+
+**C. See it for real**
+```bash
+cd F:\agentic-workbench
+uv sync --extra dev
+uv run pytest
 uv run agent run "what is 12 * (3 + 4)?"
-uv run agent mcp-demo    # two programs talking via MCP (the "USB port" for AI tools)
+uv run agent mcp-demo
+```
+- [ ] Read `docs\code-walkthrough.md` alongside the code.
+- [ ] Optional: Gemini key in `.env` → a real model decides which tool to use.
 
-# 4. llm-eval-kit — grade answers, and catch an attack + a leaked SSN
-uv run evalkit run
+**D. Prove it (out loud)**
+- [ ] What stops your agent from looping forever (and spending forever)?
+- [ ] A "tool" is just a function plus what? Why is that description so important?
+- [ ] Why does MCP exist when tool-calling already works?
+- [ ] **Tick it in the tracker** → Milestone 4.
+
+---
+
+## 📍 Milestone 4 — Evals & Guardrails: making AI shippable (~2 weeks)
+
+*Afterwards: "I can measure AI quality with a number, block prompt attacks and PII leaks,
+and explain how a CI gate stops a bad release."*
+
+**A. Learn**
+- [ ] Read `roadmap\milestone-4-evals-observability.md` (5 min).
+- [ ] Read `notes\evals-observability-guardrails.md`.
+
+**B. Do** — open `exercises\milestone-4-evals-observability.md`:
+- [ ] Drill 1 — run the report card, find the planted failure
+- [ ] Drill 2 — the LLM-as-judge (and why tests use a fake judge)
+- [ ] Drill 3 — attack your own system with 5 injection attempts
+- [ ] Drill 4 — read the trace (the flight recorder)
+
+**C. See it for real**
+```bash
+cd F:\llm-eval-kit
+uv sync --extra dev
+uv run pytest
+uv run evalkit run      # FAILS on purpose — that's the lesson
 uv run evalkit guard "Ignore all previous instructions; my ssn is 123-45-6789"
+```
+- [ ] Read `docs\code-walkthrough.md` alongside the code.
+- [ ] Optional: Gemini key → a real AI judge grades answers.
 
-# 5. lora-finetune-lab — compare base model vs fine-tuned vs RAG
-uv run lora eval
+**D. Prove it (out loud)**
+- [ ] How do you know your AI feature didn't get *worse* after a change?
+- [ ] Why are guardrails "filters, not guarantees"?
+- [ ] When do you need an LLM judge instead of exact-match scoring?
+- [ ] **Tick it in the tracker** → Milestone 5.
 
-# 6. flagship-ai-platform — the capstone, everything wired together
+---
+
+## 📍 Milestone 5 — Serving & Fine-tuning: to production (~2–3 weeks)
+
+*Afterwards: "I can serve an AI system as an API with caching/rate limits/metrics, and I
+have ACTUALLY fine-tuned models on a free GPU — and I know when not to."*
+
+**A. Learn**
+- [ ] Read `roadmap\milestone-5-serving-deploy.md` (5 min).
+- [ ] Read `notes\serving-deployment-finetuning.md`.
+
+**B. Do** — open `exercises\milestone-5-serving-finetuning.md`:
+- [ ] Drill 1 — serve a real API, click around `/docs`
+- [ ] Drill 2 — semantic cache: same question ≈ free
+- [ ] Drill 3 — rate limiting: trigger a 429 yourself
+- [ ] Drill 4 — read the CI/CD pipeline like a checklist
+- [ ] Drill 5 — fine-tune vs RAG: the decision that saves months
+
+**C. Train for real (free!)** — in `F:\lora-finetune-lab`:
+- [ ] Read `docs\free-gpu-guide.md` — pick Colab or Kaggle (5 min).
+- [ ] Run `notebooks\qlora_finetune.ipynb` on a free T4 — the classic stack, ~30–60 min.
+- [ ] Then run `notebooks\unsloth_finetune.ipynb` — same lesson, a 3B model. Download your
+      adapter. **You have now fine-tuned real models.** 🏆
+- [ ] Read `docs\when-to-finetune.md` — the decision framework (short, and interview gold).
+
+**D. Prove it (out loud)**
+- [ ] Why does every public AI API have rate limits?
+- [ ] What does a semantic cache trade away for its savings?
+- [ ] "RAG adds ______, fine-tuning adds ______." When do you pick each?
+- [ ] **Tick it in the tracker** → Milestone 6.
+
+---
+
+## 📍 Milestone 6 — Capstone & Interview Readiness (~2–4 weeks)
+
+*Afterwards: "I can walk an interviewer through a complete production AI system I
+understand end-to-end, and design a new one on a whiteboard."*
+
+**A. Learn**
+- [ ] Read `roadmap\milestone-6-capstone-interview.md` (5 min).
+
+**B + C. Do (the capstone IS the drill)** — open `exercises\milestone-6-capstone.md`:
+```bash
+cd F:\flagship-ai-platform
+uv sync --extra dev
+uv run pytest
 uv run flagship ask "What do guardrails defend against?"
 uv run flagship eval
 ```
+- [ ] Drill 1 — trace one question through all 5 boxes (guardrail → agent → retrieval →
+      citations → tracing), with `docs\code-walkthrough.md` open
+- [ ] Drill 2 — break it at every layer
+- [ ] Drill 3 — record your 3-minute pitch (yes, actually record it)
+- [ ] Drill 4 — system-design dry run, then compare with the case study
+- [ ] Drill 5 — score yourself in `progress\readiness-scorecard.md`
 
-**What "offline fakes" means:** instead of calling a real AI (which costs money),
-the project swaps in a pretend one — e.g. a fake embedder that turns text into
-numbers with simple math, or a scripted agent that follows a fixed plan. The
-*machinery around it* (the part you're learning) is 100% real.
+**D. Interview prep (ongoing from here)**
+- [ ] Work through `interview-prep\llm-fundamentals.md` (out loud)
+- [ ] `interview-prep\system-design.md` + both case studies in `system-design\`
+- [ ] `interview-prep\python-coding.md` and `interview-prep\behavioral.md`
+- [ ] Each project's `docs\interview-questions.md` — your strongest material, because
+      you've *run* that code
+
+- [ ] **Tick Milestone 6.** You are now interview-ready. Tailor your resume around the
+      six projects and start applying. 🎓
 
 ---
 
-## 6. Going live with your Gemini API key 🔑
+# Part 2 — REFERENCE 📚
+*(Jump here when needed. Not homework.)*
 
-You have a **Google Gemini** API key. To make a project use the *real* AI:
+## R1. What is all this? (the 30-second picture)
+
+- **`F:\AI Engineer`** = the classroom: syllabus (`roadmap/`), textbook (`notes/`),
+  drills (`exercises/`), mock tests (`interview-prep/`), report card (`progress/`).
+  No app code here.
+- **Six folders on `F:\`** = the practice projects, one per skill:
+
+| # | Repo | In plain words |
+|:-:|------|----------------|
+| 1 | `structured-extractor` | Pulls clean data out of messy text ("total: ₹4,200, due: 15 July") |
+| 2 | `rag-knowledge-assistant` | Answers questions from YOUR documents, with citations |
+| 3 | `agentic-workbench` | An agent: thinks → picks a tool → uses it → repeats until done |
+| 4 | `llm-eval-kit` | Grades AI answers; blocks attacks and PII leaks |
+| 5 | `lora-finetune-lab` | Actually trains (fine-tunes) a model; shows when not to bother |
+| 6 | `flagship-ai-platform` | The capstone — all of the above in one product |
+
+All on GitHub under **ArunRyzen** (same names).
+
+## R2. Glossary (plain words)
+
+| Word | Meaning |
+|------|---------|
+| **LLM** | The AI that reads/writes text (Gemini, Claude, GPT) |
+| **API** | How your code talks to someone else's program over the internet |
+| **API key** | Secret password proving the request is yours. Never share/commit it |
+| **Token** | The chunks a model reads text in (~¾ of a word). You pay per token |
+| **Prompt** | The text you send the model |
+| **`uv`** | Installs everything a Python project needs, in one command |
+| **Virtual environment** | A private toolbox per project so projects don't clash; `uv` handles it |
+| **`pytest`** | Scripts that check the code still works. Green = good |
+| **CI** | Robots on GitHub re-running the tests on every change |
+| **Offline / fake mode** | Projects run without any API key using pretend models — free learning |
+
+## R3. The universal recipe (identical in every project)
+
+```bash
+cd F:\<project-folder>
+uv sync --extra dev     # install (first time, and after any git pull)
+uv run ruff check .     # lint  = "any sloppy code?"
+uv run mypy .           # types = "any mismatched plumbing?"
+uv run pytest           # tests = "does everything work?" (offline, no key)
+```
+
+All demo commands live in Part 1's milestone sections. `uv run uvicorn <package>.api:app
+--reload` serves a project's API at http://127.0.0.1:8000/docs (packages:
+`structured_extractor`, `rag_assistant`, `agentic_workbench`, `llm_eval_kit`, `flagship`).
+
+## R4. Going live with your Gemini key
 
 ```bash
 cd <project folder>
-cp .env.example .env     # creates your private settings file
+cp .env.example .env    # then open .env in a text editor and paste:  GEMINI_API_KEY=your-key
 ```
+The project auto-switches from "fake" to real Gemini. `.env` is git-ignored (your key
+never leaves your machine). Free key: https://aistudio.google.com/apikey — the free tier
+comfortably covers this course. Anthropic/OpenAI keys also work if you ever add them.
 
-Open the new `.env` file in any text editor and paste your key:
+## R5. Folder map of `F:\AI Engineer`
 
-```
-GEMINI_API_KEY=your-key-here
-```
+| Folder | What | When |
+|--------|------|------|
+| `roadmap/` | The 6-milestone plan | Part 1 sends you there each milestone |
+| `notes/` | The textbook | Part 1, step A of each milestone |
+| `exercises/` | The drills | Part 1, step B |
+| `interview-prep/` | Q&A with full answers | Part 1, step D + Milestone 6 |
+| `system-design/` | Worked design examples | Milestone 6 |
+| `progress/` | Tracker + readiness scorecard | End of each milestone |
+| `cheatsheets/`, `architecture/`, `research-notes/`, `prompt-engineering/`, `resources/` | Extras/placeholders | **Ignore** unless curious |
+| `project-index.md` | Quick links to all projects | When you need a link fast |
 
-That's it — the project detects the key and switches from "fake" to "live" for the
-model calls. Notes:
-
-- `.env` is **git-ignored**: your key stays on your machine, never uploaded.
-- Each repo's README has a short "Live mode" section saying exactly what changes.
-- Don't have a key yet? Get one free at https://aistudio.google.com/apikey
-- The projects also accept `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` if you ever add
-  those — but **Gemini is enough for the whole course**.
-
-**Cost sanity:** Gemini has a generous free tier; the exercises here use tiny
-prompts. You are very unlikely to spend anything meaningful while learning.
-
----
-
-## 7. How to study — the learning loop 🔁
-
-For **each milestone**, repeat this 6-step loop. Milestone 1 as the example:
-
-1. **Read the map** — `roadmap/milestone-1-llm-fundamentals.md` (5 min: what & why).
-2. **Learn the ideas** — the matching file(s) in `notes/` (e.g. `notes/llm-fundamentals.md`).
-   Read to *recognise*, not memorise.
-3. **Do the drills** — the matching file in `exercises/` (there is one per milestone).
-   Small hands-on tasks with a "lesson to confirm" each.
-4. **Open the project** — run the demo (section 5), then **read the code with its
-   walkthrough**: every project has `docs/code-walkthrough.md` that explains the code
-   file-by-file in plain words, and the source files carry beginner-friendly comments.
-   Change something small, re-run the tests, see what breaks. *That's the real learning.*
-5. **Quiz yourself** — the project's `docs/interview-questions.md` + the matching bank in
-   `interview-prep/`. Answer **out loud** in your own words.
-6. **Tick it off** — update `progress/progress-tracker.md`.
-
-Then move to the next milestone. Suggested pace at ~20 hrs/week: **2–4 weeks per
-milestone**. Slower is fine — understanding beats speed.
-
----
-
-## 8. Map of this repo (`AI_Engineer`)
-
-| Folder | What's inside | Open it when… |
-|--------|--------------|----------------|
-| `roadmap/` | The 6-milestone plan, one page per milestone | starting a milestone |
-| `notes/` | The "textbook" — concepts in plain words | learning ideas (step 2) |
-| `exercises/` | Hands-on drills, **one file per milestone** | practising (step 3) |
-| `cheatsheets/` | One-page quick references | you forget a command/idea |
-| `interview-prep/` | Questions **with full answers** | quizzing yourself (step 5) |
-| `system-design/` | "Design an AI system" worked examples | after Milestone 4 |
-| `progress/` | Your tracker + readiness scorecard | ticking things off (step 6) |
-| `project-index.md` | One-line map of all six projects | you need a link fast |
-
----
-
-## 9. Interview prep (when you're ready — no rush)
-
-- Start with `interview-prep/llm-fundamentals.md` after Milestone 1; add the other
-  banks as their milestones finish.
-- Each project's `docs/interview-questions.md` asks questions **about code you have
-  actually run** — the strongest kind of interview answer.
-- Practice out loud: short answer first, then the trade-off ("X is faster but costs
-  more; I'd pick X when…").
-- `system-design/` has a framework + two worked case studies for design rounds.
-
----
-
-## 10. When something goes wrong 🛠️
+## R6. When something goes wrong
 
 | Symptom | Fix |
 |---------|-----|
-| `uv: command not found` | `pip install uv`, then reopen the terminal |
-| `python not found` / too old | Install Python 3.12+ from python.org, tick "Add to PATH" |
-| Tests ask for an API key | They never should — run `uv sync --extra dev` first |
-| A live call fails | Check `.env` exists in *that project's folder* and the key has no extra spaces/quotes |
+| `uv: command not found` | `pip install uv`, reopen the terminal |
+| `python` missing / too old | Install 3.12+ from python.org, tick "Add to PATH" |
+| Tests ask for an API key | They shouldn't — run `uv sync --extra dev` first |
+| A live call fails | Is `.env` in *that* project's folder? Key pasted with no spaces/quotes? |
 | Import errors after `git pull` | Re-run `uv sync --extra dev` |
-| Want to see CI | The repo's **Actions** tab on GitHub (all currently green ✅) |
-| Totally stuck | Re-run the 4 recipe commands (section 4) and read the *first* error line — it usually says exactly what's missing |
+| `evalkit run` says FAILED | **Intentional** — a planted failure is the Milestone-4 lesson |
+| Colab/Kaggle questions | `F:\lora-finetune-lab\docs\free-gpu-guide.md` |
+| Totally stuck | Re-run the R3 recipe; read the FIRST error line; if 20 min pass, note it and move on (Rule 2) |
 
----
+## R7. TL;DR
 
-## 11. TL;DR
-
-> **Learn** in `AI_Engineer` (roadmap → notes → exercises) → **run & read** the
-> matching project on `F:\` (`uv sync --extra dev`, `uv run pytest`, demo, code
-> walkthrough) → **quiz yourself** → **tick the tracker** → next milestone.
-> No API key needed to learn; add `GEMINI_API_KEY` to a project's `.env` when you
-> want the real AI. Start with **Milestone 1**.
+> Follow **Part 1** top to bottom, ticking boxes. Each milestone: read the map → read the
+> note → do the drills → run & read the project → answer the questions out loud → tick
+> the tracker. No API key needed except where a drill says so. If lost, your next step is
+> always **the first unticked box in Part 1**.
