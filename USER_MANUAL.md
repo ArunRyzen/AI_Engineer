@@ -66,6 +66,8 @@ uv run extract schemas   # the demo
 - [ ] Change something small in the code, run `uv run pytest` again, watch what breaks,
       undo it. (This is learning, not vandalism.)
 - [ ] Optional: put your key in `.env` (Part 2, section R4) and run one real extraction.
+- [ ] Optional: turn on `LLM_DEBUG` (Part 2, section R4.5) and re-run an extraction to
+      SEE exactly what's sent to the AI and what comes back.
 
 **D. Prove it** — answer OUT LOUD, in your own words:
 - [ ] What's a token, and why do we pay per token?
@@ -308,6 +310,33 @@ cp .env.example .env    # then open .env in a text editor and paste:  GEMINI_API
 The project auto-switches from "fake" to real Gemini. `.env` is git-ignored (your key
 never leaves your machine). Free key: https://aistudio.google.com/apikey — the free tier
 comfortably covers this course. Anthropic/OpenAI keys also work if you ever add them.
+
+## R4.5 Watch what's sent to the AI (LLM_DEBUG) 🔍
+
+Every project has a **debug mode** that prints each AI call — what was *sent* (system
+prompt, your text, the schema/tools) and what came *back* (answer, tokens, retries).
+Perfect for understanding what's really happening. In PowerShell:
+
+```powershell
+$env:LLM_DEBUG="1"          # turn on (for this terminal window)
+uv run extract run --schema contact "Hi, I'm Priya from TechCorp"   # any demo works
+Remove-Item Env:LLM_DEBUG   # turn off
+```
+
+You'll see blocks like:
+
+```
+=== AI REQUEST (gemini/gemini-2.5-flash) ===
+system: You are an extraction engine...
+user: Hi, I'm Priya from TechCorp
+schema: ContactInfo
+=== AI RESPONSE (attempt 1) ===
+{"name": "Priya", ...}
+```
+
+Notes: works in **offline fake mode too** (blocks are labeled `offline fake`), your API
+key is never printed, and it's off by default. In the agent project it shows every
+think→act→observe step — the single best way to *see* the ReAct loop.
 
 ## R5. Folder map of `F:\AI Engineer`
 
