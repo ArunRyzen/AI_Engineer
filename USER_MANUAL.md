@@ -317,11 +317,20 @@ Every project has a **debug mode** that prints each AI call — what was *sent* 
 prompt, your text, the schema/tools) and what came *back* (answer, tokens, retries).
 Perfect for understanding what's really happening. In PowerShell:
 
+Two ways to turn it on — pick whichever suits you:
+
 ```powershell
-$env:LLM_DEBUG="1"          # turn on (for this terminal window)
+# Way 1 — for this terminal window only:
+$env:LLM_DEBUG="1"          # turn on
 uv run extract run --schema contact "Hi, I'm Priya from TechCorp"   # any demo works
 Remove-Item Env:LLM_DEBUG   # turn off
+
+# Way 2 — per project, stays on until you change it:
+#   add this line to the project's .env file:   LLM_DEBUG=1
 ```
+
+(If both are set, the terminal variable wins — so `$env:LLM_DEBUG="0"` temporarily
+silences a project whose `.env` says 1.)
 
 You'll see blocks like:
 
